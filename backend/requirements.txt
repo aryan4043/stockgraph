@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic[email]
+# torch - Removed for build stability
+# torch-geometric - Removed for build stability
+networkx
+pandas
+yfinance
+redis
+celery
+google-generativeai
+python-dotenv

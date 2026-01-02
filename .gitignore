@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment Variables (CRITICAL)
+.env
+.env.local
+stockgraph/backend/.env
+
+# Build Outputs
+dist/
+build/
+*.egg-info/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
