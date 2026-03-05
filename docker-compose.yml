@@ -10,6 +10,8 @@ services:
     environment:
       - DATABASE_URL=postgresql://user:pass@db:5432/stockgraph
       - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./backend:/app
     depends_on:
       - db
       - redis

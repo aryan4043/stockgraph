@@ -159,17 +159,17 @@ export const PortfolioAnalyzer: React.FC = () => {
 
                 {analysis ? (
                     <div className="space-y-8 flex-1">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div className="p-6 bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl text-center">
-                                <div className="text-xs text-gray-400 uppercase tracking-wider mb-2 font-bold">Risk Score</div>
-                                <div className={`text-5xl font-black ${analysis.risk_score > 7 ? 'text-red-400' : 'text-emerald-400'} flex justify-center items-baseline`}>
-                                    {analysis.risk_score}<span className="text-lg font-medium text-gray-500 ml-1">/10</span>
+                        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                            <div className="p-3 sm:p-6 bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl text-center">
+                                <div className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider mb-1 sm:mb-2 font-bold truncate">Risk Score</div>
+                                <div className={`text-3xl sm:text-5xl font-black ${analysis.risk_score > 7 ? 'text-red-400' : 'text-emerald-400'} flex justify-center items-baseline`}>
+                                    {analysis.risk_score}<span className="text-sm sm:text-lg font-medium text-gray-500 ml-1">/10</span>
                                 </div>
                             </div>
-                            <div className="p-6 bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl text-center">
-                                <div className="text-xs text-gray-400 uppercase tracking-wider mb-2 font-bold">Diversification</div>
-                                <div className="text-5xl font-black text-amber-400 flex justify-center items-baseline">
-                                    {analysis.diversification_score}<span className="text-lg font-medium text-gray-500 ml-1">/10</span>
+                            <div className="p-3 sm:p-6 bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl text-center">
+                                <div className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-wider mb-1 sm:mb-2 font-bold truncate" title="Diversification">Diversification</div>
+                                <div className="text-3xl sm:text-5xl font-black text-amber-400 flex justify-center items-baseline">
+                                    {analysis.diversification_score}<span className="text-sm sm:text-lg font-medium text-gray-500 ml-1">/10</span>
                                 </div>
                             </div>
                         </div>

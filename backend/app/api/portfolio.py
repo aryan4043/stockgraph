@@ -25,7 +25,7 @@ class PortfolioAnalysisResponse(BaseModel):
     sector_allocation: Dict[str, float]
 
 @router.post("/portfolio/analyze", response_model=PortfolioAnalysisResponse)
-async def analyze_portfolio(request: PortfolioAnalysisRequest):
+def analyze_portfolio(request: PortfolioAnalysisRequest):
     if not request.holdings:
         raise HTTPException(status_code=400, detail="No holdings provided")
     
